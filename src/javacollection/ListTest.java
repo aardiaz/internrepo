@@ -4,35 +4,43 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import objectwitharray.Student;
+
 public class ListTest {
 	
 	public static void main(String[] args) {
 		
 		//List<String>  list = new ArrayList<>();
-		List<String>  list = new LinkedList<>();
+		List<String>  list =   new LinkedList<>();
 		
 		list.add("nepal");
+		list.add("india");
 		list.add("china");
-		list.add("japan");
 		list.add("korea");
-		list.add("canada");
 		
+		//System.out.println(list.contains("china"));
 		list.remove(2);
-		list.remove("china");
-		
-		System.out.println(list.contains("canada"));
-		
+		list.remove("india");
+		//list.clear();
+		 
 		for(String s : list) {
 			System.out.println(s);
 		}
 		
-		
-//		List<Student>  list = new ArrayList<>();
-//		     Student s = new Student();
-//		     s.setId(343);
-//		     ----------
+	   
+//		List<Student>  slist =   new ArrayList<>();
+//		
+//		   Student  s = new Student();
 //		     ---------
-//		   list.add(s); 
+//		     -------------
+//		     -------
+//		slist.add(s);
+		
+		/*
+		 * a> List of Student
+		 * b> List of Book
+		 */
+		
 	}
 
 }
